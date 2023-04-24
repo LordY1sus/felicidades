@@ -1,0 +1,134 @@
+/*GENERAL STYLES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --purple: #8000ff;
+}
+
+html, body, main {
+    height: 100%;
+}
+
+body {
+    font-size: 17.5px;
+    color: #fff;
+}
+
+/*BOX DISPLAY STYLES*/
+.box_container {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #8000ff 0%, #ff99cc 100%);
+}
+
+.box_container-box {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 
+    [start-row1] .5fr
+    [end-row1 start-row2] 6fr
+    [end-row2 start-row3] .5fr
+    [end-row3];
+}
+    /*HEADER STYLES*/
+    .box_header {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-row: start-row1 / end-row1;
+    }
+    .box_header-h1 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+
+    /*HERO STYLES*/
+    .hero {
+        grid-row: start-row2 / end-row2;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 
+        [start-sub-row1] 3fr
+        [end-sub-row1 start-sub-row2] 1fr
+        [end-sub-row2];
+    }
+        /*PICTURE STYLES*/
+        .hero_picture {
+            grid-row: start-sub-row1 / end-sub-row1;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            background-image: url(images/0.png);
+        }
+        /*PICTURE LIST*/
+            .a {
+                background-image: url(images/a.jpg);
+            }
+            .b {
+                background-image: url(images/b.jpg);
+            }
+            .c {
+                background-image: url(images/c.jpg);
+            }
+            .d {
+                background-image: url(images/d.jpg);
+            }
+            .e {
+                background-image: url(images/e.jpg);
+            }
+            .f {
+                background-image: url(images/f.jpg);
+            }
+            .g {
+                background-image: url(images/g.gif);
+            }
+            .h {
+                background-image: url(images/h.jpg);
+            }
+            .i {
+                background-image: url(images/i.gif);
+            }
+            .j {
+                background-image: url(images/j.jpg);
+            }
+    /*TEXT CONGRATS*/        
+    .hero_text {
+        grid-row: start-sub-row2 / end-sub-row2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: .9rem;
+    }
+    /*FOOTER STYLES*/
+    .footer {
+        grid-row: start-row3 / end-row3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /*BUTTON*/
+    .button {
+        padding: 5px 5px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        background: linear-gradient(to bottom, #ff99cc 25%, #8000ff 100%);
+        color: #fff;
+        font-size: 1rem;
+    }
