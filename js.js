@@ -40,7 +40,7 @@ function func7(){
     document.getElementById("hero_picture").className = "hero_picture g";
 }
 function func8(){
-    p.textContent = "Y la unica mujer que me hace decir 'ti' con tada la dulzura que pueda."
+    p.textContent = "Y la unica persona que me hace decir 'ti' con toda la dulzura que pueda."
     document.getElementById("hero_picture").className = "hero_picture h";
 }
 function func9(){
